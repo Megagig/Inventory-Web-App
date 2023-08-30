@@ -2,4 +2,696 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+#topText {
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin: 0 auto;
+  color: #1ac888;
+  font-weight: 600;
+}
+#form {
+  background-color: white;
+}
+#warning {
+  color: red;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+#registerForm {
+  background-color: lightgray;
+  width: 25rem;
+  margin: 0 auto;
+}
+.boxInput {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+small {
+  font-size: 10px;
+  color: rgb(176, 70, 70);
+}
+form p {
+  margin-bottom: 1.5rem;
+}
+form div {
+  margin-bottom: 1.5rem;
+}
+form {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1.5rem;
+}
+form label {
+  display: block;
+  padding-bottom: 8px;
+}
+input {
+  all: unset;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid rgba(174, 174, 174, 0.368);
+  width: 100%;
+  overflow: hidden;
+}
+input[type='submit'] {
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 6px 10px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  background-color: lightseagreen;
+}
+.login {
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+::placeholder {
+  opacity: 0.3;
+}
+#indexNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2.5rem;
+  border-top: 1px solid #1ac888;
+  border-bottom: 1px solid #1ac888;
+}
+.logo {
+  font-size: 23px;
+  font-family: 'Chela One', cursive;
+  color: #1ac888;
+}
+.navRight {
+  display: flex;
+  gap: 1rem;
+}
+
+#indexNav button:nth-child(1),
+.mainText button {
+  background-color: #1ac888;
+  padding: 8px 22px;
+  border-radius: 3px;
+  border: 2px solid #1ac888;
+  box-shadow: 0 3px 10px lightslategray;
+  color: white;
+  font-size: 16px;
+}
+#indexNav button:nth-child(1) a,
+.mainText button a {
+  color: white;
+}
+#indexNav button:nth-child(1):hover {
+  box-shadow: 0 5px 10px #1ac888;
+}
+.mainText button {
+  margin-bottom: 4rem;
+}
+#indexNav button:nth-child(2) {
+  all: unset;
+  border: 3px solid #1ac888;
+  padding: 8px 12px;
+  border-radius: 3px;
+  color: black !important;
+  box-shadow: 0 3px 10px lightslategray;
+}
+#indexNav button:nth-child(2) a {
+  color: black;
+}
+#indexNav button:nth-child(2):hover {
+  background-color: #1ac888;
+  color: white;
+  box-shadow: 0 5px 10px #1ac888;
+}
+.indexBody {
+  background-color: lightgrey;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6rem 0 1rem 0;
+}
+.mainText {
+  width: 45%;
+}
+.mainText h3 {
+  margin: 13px 0;
+  font-size: 16px;
+}
+main img {
+  width: 45%;
+  border-radius: 2px;
+}
+.count {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+}
+.users {
+  background-color: rgb(164, 164, 164);
+  padding: 2rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.users i {
+  font-size: 22px;
+}
+.usersContent h5 {
+  padding-top: 10px;
+  color: #ddd;
+  font-size: 12px;
+}
+.dashboardNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 1rem;
+}
+.ri-user-3-line {
+  border: 1px solid #655d5d;
+  border-radius: 50px;
+  padding: 6px;
+  font-size: 20px;
+  background-color: rgba(78, 78, 78, 0.761);
+  cursor: pointer;
+}
+#logout {
+  all: unset;
+  padding: 6px 1.2rem;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #1ac888;
+  color: white;
+  cursor: pointer;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem 1rem;
+}
+.salesStat {
+  background-color: black;
+}
+.salesStat p {
+  margin-bottom: 19rem;
+  font-size: 23px;
+  padding: 1rem;
+  color: white;
+}
+.salesBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 1rem;
+}
+i {
+  font-size: 30px;
+}
+.salesBox div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  border-radius: 8px;
+  gap: 13px;
+  background-color: white;
+}
+.salesBox div i {
+  align-self: flex-end;
+  /* justify-self: flex-end; */
+}
+/* .firstStat{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.firstStat i{
+  display: block;
+}
+.secondStat{
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+.thirdStat{
+  background-color: white;
+  padding-bottom: 5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.fourthStat{
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  
+} */
+.fourthStat h4,
+.thirdStat h3 {
+  font-size: 23px;
+}
+.appointments {
+  padding: 1rem 0;
+  color: white;
+  margin: 0 1rem;
+}
+.box {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;
+  background-color: rgb(36, 34, 34);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boxContent a,
+.dailyFeeds button a {
+  color: white;
+}
+.boxContent h6 {
+  margin-top: 8px;
+  font-size: 13px;
+  color: grey;
+}
+.box i {
+  display: flex;
+  align-items: center;
+}
+#features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+.dailyFeeds {
+  background-color: black;
+}
+.dailyFeeds > div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 14px;
+  border-top: 1px solid white;
+  color: white;
+}
+.dailyFeeds p {
+  font-weight: 500;
+}
+.dailyFeeds h5 {
+  margin-top: 13px;
+  font-weight: 300;
+  font-size: 12px;
+  color: grey;
+}
+.dailyFeedsText {
+  font-size: 22px;
+  padding: 1rem 0 5px 10px;
+  background-color: black;
+  color: white;
+  margin-bottom: 1rem;
+}
+.dailyFeeds img {
+  width: 10%;
+  border-radius: 50px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.dailyFeeds button {
+  background-color: #1ac888;
+  border: 1px solid #1ac888;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 10px;
+  padding: 6px 13px;
+  font-size: 17px;
+}
+table {
+  background-color: white;
+  margin: 1rem 3rem;
+  width: 50%;
+  margin: 0 auto;
+}
+caption {
+  font-size: 20px;
+  margin: 1rem 0;
+  color: #1ac888;
+  font-weight: 800;
+}
+td {
+  padding: 15px 8.5rem;
+  border-bottom: 1px solid lightgrey;
+}
+th {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 10px 1rem;
+  margin: 1.2rem 0;
+}
+footer h5 {
+  font-weight: 400;
+}
+#backButton {
+  all: unset;
+  background-color: #1ac888;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px lightslategray;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.modalBody i {
+  font-size: 19px;
+}
+.modalBody {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #ddd;
+  position: absolute;
+  top: 4%;
+  right: 1%;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  display: none;
+}
+.userModal.showModal .modalBody {
+  display: block;
+}
+.modalTop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.modalIcon {
+  padding: 0.8rem 0;
+}
+.modalFoot {
+  margin: 13px 0;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.backHome {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.804);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 6px;
+}
+.modal-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+.modal-body {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 13px;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+.ok {
+  all: unset;
+  border-radius: 6px;
+  padding: 7px 10px;
+  background-color: #b00f07;
+  color: #fff;
+}
+.cancel {
+  all: unset;
+  background-color: grey;
+  padding: 6px;
+  border-radius: 6px;
+  color: #fff;
+}
+.cancel,
+.closeModal,
+.ok {
+  cursor: pointer;
+}
+@media screen and (max-width: 1326px) {
+  .box {
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  #features {
+    padding: 0;
+  }
+  td {
+    padding: 15px 6rem;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .box {
+    gap: 1rem;
+  }
+  .boxContent h3 {
+    font-size: 15px;
+  }
+  td {
+    padding: 15px 4.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .firstStat h1 {
+    font-size: 18px;
+  }
+  .secondStat h2 {
+    font-size: 17px;
+  }
+  .salesStat p {
+    margin-bottom: 14rem;
+  }
+  .thirdStat h3 {
+    font-size: 17px;
+  }
+  .fourthStat h4 {
+    font-size: 17px;
+  }
+  #features {
+    gap: 2rem;
+  }
+  .box {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  td {
+    padding: 15px 3.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  main img {
+    width: 80%;
+  }
+  .mainText {
+    width: 80%;
+    text-align: center;
+  }
+  .mainText h1 {
+    margin-top: 2rem;
+  }
+  .modal {
+    width: 45%;
+  }
+  article {
+    grid-gap: 1rem;
+  }
+  .appointments {
+    padding: 1rem 0;
+  }
+  .dailyFeeds div {
+    gap: 1rem;
+  }
+  .salesStat p {
+    margin-bottom: 8rem;
+  }
+  .salesStat {
+    margin-bottom: 3rem;
+  }
+  #features {
+    gap: 10px;
+  }
+  .box {
+    padding: 15px 10px;
+    gap: 1rem;
+  }
+  table {
+    margin: 0 auto;
+  }
+  td {
+    padding: 15px 2.4rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  article {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    padding: 1rem;
+  }
+  #features {
+    gap: 6px;
+  }
+  .box {
+    gap: 2px;
+    padding: 5px;
+  }
+  table {
+    margin: 0 auto;
+  }
+  td {
+    padding: 15px 2.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #indexNav {
+    padding: 1.5rem 10px;
+  }
+  .dashboardNav {
+    margin: 1.5rem 0;
+  }
+  .dashboardNav h1 {
+    font-size: 25px;
+  }
+  #logout {
+    padding: 6px 12px;
+  }
+  .modal {
+    width: 55%;
+  }
+  .mainText {
+    width: 90%;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .mainText h3 {
+    margin: 2rem 0;
+  }
+  main img {
+    width: 90%;
+  }
+  #features {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .box {
+    gap: 2rem;
+    padding: 1rem 10px;
+  }
+  .boxContent h3 {
+    font-size: 18px;
+  }
+  table {
+    padding: 10px;
+  }
+  td {
+    padding: 15px 1.3rem;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dashboardNav h1 {
+    font-size: 21px;
+  }
+  td {
+    padding: 15px 1.3rem;
+    font-size: 11px;
+  }
+  #form {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dashboardNav h1 {
+    font-size: 17px;
+  }
+  #logout {
+    font-size: 11px;
+  }
+  #features {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+  .box {
+    padding: 1rem;
+    gap: 4rem;
+  }
+  table {
+    padding: 0;
+  }
+  th {
+    font-size: 11px;
+  }
+  td {
+    padding: 15px 9px;
+    font-size: 11px;
+  }
+  #backButton,
+  .dailyFeeds button,
+  #logout {
+    font-size: 13px;
+  }
 }

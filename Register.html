@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/style.css" />
+    <title>Register</title>
+  </head>
+  <body id="registerForm">
+    <form id="form">
+      <p id="topText">Register</p>
+      <p id="warning"></p>
+      <div class="boxInput">
+        <label for="fullName">FullName</label>
+        <input type="text" class="fullName" placeholder="john doe" />
+      </div>
+      <div class="boxInput">
+        <label for="username">Username</label>
+        <input type="text" class="userName" placeholder="john" />
+      </div>
+      <div class="boxInput">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          class="email"
+          name="email"
+          id="email"
+          placeholder="john@example.com"
+        />
+      </div>
+      <div class="boxInput">
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="text"
+          class="phoneNumber"
+          name="phoneNumber"
+          id="phoneNumber"
+        />
+      </div>
+      <div class="boxInput">
+        <label for="password">Password</label>
+        <input type="password" class="password" name="password" id="password" />
+        <small
+          >must be at least 8 characters, must have an uppercase, a lowercase,
+          at least a number and a special character</small
+        >
+      </div>
+      <div class="boxInput">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          class="confirmPassword"
+          name="confirmPassword"
+          id="confirmPassword"
+        />
+      </div>
+      <input type="submit" value="REGISTER" />
+      <p class="login">
+        Already have an account? <a href="/Login.html">Login</a>
+      </p>
+    </form>
+    <script src="/JS/Register.js"></script>
+  </body>
+</html>

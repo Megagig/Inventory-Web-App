@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style.css">
+    <title>Login</title>
+</head>
+    <body id="registerForm">
+        <form id="form">
+            <p id="topText">Member Login</p>
+            <p id="warning"></p>
+            <div class="boxInput">
+                <label for="username">Username</label>
+                <input type="text" class="userName" placeholder="john123">
+            </div>
+            <div class="boxInput">
+                <label for="password">Password</label>
+                <input type="password" class="password" name="password" id="password" placeholder="password">
+                <small>must be at least 8 characters, must have an uppercase, a lowercase, at least a number and a special character</small>
+            </div>
+            </div>
+            <input type="submit" value="Login">
+            <p class="login">Don't have an account? <a href='/Register.html'>Register</a></p>
+        </form>
+        
+        <script src="/js/login.js"></script>
+    </body>
+</html>
