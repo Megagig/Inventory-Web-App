@@ -16,7 +16,7 @@ a {
 button {
   cursor: pointer;
 }
-#topText {
+#member {
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
   text-align: center;
@@ -27,7 +27,7 @@ button {
 #form {
   background-color: white;
 }
-#warning {
+#signs {
   color: red;
   width: 100%;
   text-align: center;
@@ -38,7 +38,7 @@ button {
   width: 25rem;
   margin: 0 auto;
 }
-.boxInput {
+.boxes {
   margin: 0 auto;
   width: 100%;
   margin-bottom: 2rem;
@@ -247,36 +247,8 @@ i {
 }
 .salesBox div i {
   align-self: flex-end;
-  /* justify-self: flex-end; */
 }
-/* .firstStat{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-}
-.firstStat i{
-  display: block;
-}
-.secondStat{
-  background-color: white;
-  border-radius: 10px;
-  align-items: center;
-}
-.thirdStat{
-  background-color: white;
-  padding-bottom: 5rem;
-  border-radius: 10px;
-  align-items: center;
-}
-.fourthStat{
-  background-color: white;
-  border-radius: 10px;
-  align-items: center;
-  
-} */
+
 .fourthStat h4,
 .thirdStat h3 {
   font-size: 23px;
