@@ -3,46 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Styles/style.css/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Styles/style.css" />
     <title>Dashboard</title>
   </head>
-  <body>
-    <div class="upper">
-      <h1>Welcome back <span class="name"></span></h1>
-      <button class="logout">Logout</button>
+  <body id="dashboard">
+    <div class="dashboardNav">
+      <h1>Welcome back, <span class="user"></span></h1>
+      <i class="navIcon ri-user-3-line"></i>
     </div>
-
-    <nav class="stats">
-      <div class="inventory">
-        <div class="boxes">
-          <div class="box">
-            <h2>280</h2>
-            <p>Sales Today</p>
+    <nav class="appointments">
+      <div id="features">
+        <div class="box">
+          <div class="boxContent">
+            <a href="#">
+              <h1>217</h1>
+              <h6>Sales Today</h6></a
+            >
           </div>
-          <i class="ri-shopping-cart-2-line"></i>
+          <i
+            class="ri-shopping-cart-2-line"
+            style="color: rgb(49, 208, 49)"
+          ></i>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <h2>1098.28</h2>
-            <p>Total Earnings</p>
+        <div class="box">
+          <div class="boxContent">
+            <a href="#">
+              <h1>109.783</h1>
+              <h6>Total Earnings</h6></a
+            >
           </div>
-          <i class="ri-shopping-cart-2-line"></i>
+          <i
+            class="ri-money-dollar-circle-line"
+            style="color: rgb(210, 23, 85)"
+          ></i>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <h2>9038</h2>
-            <p>Total Revenue</p>
+        <div class="box">
+          <div class="boxContent">
+            <a href="#">
+              <h1>86.002</h1>
+              <h6>Total Revenue</h6></a
+            >
           </div>
-          <i class="ri-shopping-cart-2-line"></i>
+          <i
+            class="ri-exchange-dollar-line"
+            style="color: rgb(219, 41, 219)"
+          ></i>
         </div>
-        <div class="boxes">
-          <div class="box">
-            <h2>20059</h2>
-            <p>Pending Orders Today</p>
+        <div class="box">
+          <div class="boxContent">
+            <a href="#">
+              <h1>7</h1>
+              <h6>Pending Orders Today</h6></a
+            >
           </div>
-          <i class="ri-shopping-cart-2-line"></i>
+          <i class="ri-shopping-cart-line" style="color: rgb(255, 183, 0)"></i>
         </div>
       </div>
     </nav>
+    <article>
+      <div class="salesStat">
+        <p>Sales Stat</p>
+        <div class="salesBox">
+          <div class="firstStat">
+            <h1>User Smile</h1>
+            <i class="ri-user-smile-line"></i>
+          </div>
+          <div class="secondStat">
+            <h2>Monthly Sales</h2>
+            <i class="ri-funds-line"></i>
+          </div>
+          <div class="thirdStat">
+            <h3>Items Orders</h3>
+            <i class="ri-price-tag-3-line"></i>
+          </div>
+          <div class="fourthStat">
+            <h4>Bug pages</h4>
+            <i class="ri-pages-line"></i>
+          </div>
+        </div>
+      </div>
+      <div class="dailyFeeds">
+        <p class="dailyFeedsText">Daily Feed</p>
+        <div>
+          <img src="/images/Alex.webp" alt="" />
+          <div>
+            <p>Alex Murphy reacted to your blog post</p>
+            <h5>7 min ago</h5>
+          </div>
+        </div>
+        <div>
+          <img src="/images/John.webp" alt="" />
+          <div>
+            <p>John Doe reacted to your blog post</p>
+            <h5>10 hours ago</h5>
+          </div>
+        </div>
+        <div>
+          <img src="images/Monica.webp" alt="" />
+          <div>
+            <p>Monica Smith is now engaged</p>
+            <h5>8 hours ago</h5>
+          </div>
+        </div>
+        <div>
+          <img src="/images/Elisha.webp" alt="" />
+          <div>
+            <p>Elisha Scott is now engaged</p>
+            <h5>5 min ago</h5>
+          </div>
+        </div>
+        <div class="button">
+          <p></p>
+          <button><a href="/">Read More</a></button>
+        </div>
+      </div>
+    </article>
+    <table>
+      <caption>
+        Latest Projects
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Tanzanite</td>
+        <td>11/12/2009</td>
+        <td>25/12/2010</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>Diamond</td>
+        <td>22/12/2009</td>
+        <td>25/11/2010</td>
+        <td>Pending</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>11/12/2009</td>
+        <td>20/12/2010</td>
+        <td>Done</td>
+      </tr>
+      <tr>
+        <td>Sapphire</td>
+        <td>8/12/2009</td>
+        <td>17/12/2010</td>
+        <td>Done</td>
+      </tr>
+    </table>
+    <footer>
+      <p class="logo">vikii</p>
+      <h5>Copyright &copy; <span class="year"></span></h5>
+    </footer>
+    <!-- modal for nav icon -->
+    <div class="userModal">
+      <div class="modalBody">
+        <div class="modalTop">
+          <i class="ri-user-3-line"></i>
+          <div class="modalIcon">
+            <p>Welcome</p>
+            <h5 class="modalUser"></h5>
+          </div>
+        </div>
+        <div class="modalFoot">
+          <i class="ri-logout-box-r-line"></i>
+          <button id="logout">Logout</button>
+        </div>
+        <div class="backHome">
+          <i class="ri-arrow-go-back-line"></i>
+          <button id="backButton">Back to home</button>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <div class="modal-bg">
+      <div class="modal">
+        <div class="modal-title">
+          <p>Logout user</p>
+          <p class="closeModal">X</p>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to logout?</p>
+        </div>
+        <div class="modal-footer">
+          <button class="ok">Ok</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/Dashboard.js"></script>
   </body>
 </html>

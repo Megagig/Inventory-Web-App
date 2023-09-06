@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 BMI-Calculator <a name="about-project"></a>
+# 📖 Inventory-Web-App <a name="about-project"></a>
 
 **Inventory-Web-App** An inventory web application that help businesses track their sales, purchases, create invoices and run some standard business reports
 
